@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body{
-    background: url(../images/pexels-dana-tentis-370799.jpg) no-repeat center;
+    background: url(../images/v2osk-Ovn1hyBge38-unsplash.jpg) no-repeat center;
     background-size: cover;
     color: #f3f3f3;
     font-family: 'VT323', monospace;
-    font-size: 18px;
-    
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -16,8 +14,8 @@ body{
 .card{
     background-color: #070d12;
     border-radius: 10px;
-    width: 370px;
-    border: 3px solid #f3f3f3;
+    width: 420px;
+    border: 3px solid #ffffff;
     overflow: hidden;
     
 }
@@ -33,7 +31,7 @@ body{
 .card .profile .photo{
     width: 96px;
     border-radius: 50%;
-    border: 4px solid #28b7e2;
+    border: 3px solid #ffffff;
 }
 
 .card .profile .name{
@@ -50,11 +48,11 @@ body{
     
 }
 
-.card .abas{
+.card .tabs{
     display: flex;
 }
 
-.card .abas .aba{
+.card .tabs .tab{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -63,41 +61,49 @@ body{
     transition: background-color 0.2s ease-in-out;
 }
 
-.card .abas .aba.selecionado{
+.card .tabs .tab.selected{
     background-color: #262626;
 }
 
-.card .abas-information{
+.card .tabs-information{
     /* padding-top: 30px; */
     background-color: #262626;
 }
 
-.card .abas .aba:hover{
+.card .tabs .tab:hover{
     background-color: #414141;
 }
 
-.abas-information .information{
+.tabs-information .information{
     min-height: 260px;
     padding: 15px;
     display: none;
 }
 
-.abas-information .information.selecionado{
+.tabs-information .information.selected{
     display: block;
 }
 
 
-.abas-information .sub-title{
+.tabs-information .sub-title{
     font-size: 22px;
     text-align: center;
     margin-bottom: 25px;
 }
 
-.abas-information .description{
+.tabs-information .description{
     font-size: 20px;
-    max-height: 180px;
+    max-height: 220px;
     overflow-y: auto;
     padding-right: 10px;
+}
+
+.tabs-information .description span{
+    color: #28e250;
+}
+
+.tabs-information .description .alert{
+    color: #ff514b;
 }
 
 .redes-sociais{
@@ -107,6 +113,7 @@ body{
     gap: 30px;
     max-height: 180px;
     overflow-y: auto;
+    margin-bottom: 10px;
 }
 
 .redes-sociais li a{
@@ -131,14 +138,14 @@ body{
 }
 
 .redes-sociais .github{
-    background-color: #414141;
+    background-color: #9617a4;
 }
 
-.abas img{
+.tabs img{
     width: 30px;
 }
 
 .fa-heart{
     width: 40px;
-    color: #28b7e2;
+    color: #24c847;
 }

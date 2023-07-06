@@ -1,50 +1,51 @@
 /*
 
-    OBJETIVO - quando clicarmos na aba temos que mostrar o conteúdo da aba que foi clicada pelo usuário e esconder o conteúdo da aba anterior
+    OBJETIVO - quando clicarmos na tab temos que mostrar o conteúdo da tab que foi clicada pelo usuário e esconder o conteúdo da tab anterior
 
-  - passo 1 - dar um jeito de pegar os elementos que representam as abas no HTML
-  - passo 2 - dar um jeito de identificar o clique no elemento da aba
-     - passo 3 - quando o usuário clicar, desmarcar a aba selecionada
-    - passo 4 - marcar a aba clicada como selecionado
+  - passo 1 - dar um jeito de pegar os elementos que representam as tabs no HTML
+  - passo 2 - dar um jeito de identificar o clique no elemento da tab
+     - passo 3 - quando o usuário clicar, desmarcar a tab selecionada
+    - passo 4 - marcar a tab clicada como selected
     - passo 5 - esconder o conteúdo anterior
-    - passo 6 - mostrar o conteúdo da aba selecionada
+    - passo 6 - mostrar o conteúdo da tab selecionada
 */
 
-// - passo 1 - dar um jeito de pegar os elementos que representam as abas no HTML
+// - passo 1 - dar um jeito de pegar os elementos que representam as tabs no HTML
 
-const abas = document.querySelectorAll(".aba");
+const tabs = document.querySelectorAll(".tab");
 
-//- passo 2 - dar um jeito de identificar o clique no elemento da aba
-abas.forEach((aba) => {
-  aba.addEventListener("click", function () {
+//- passo 2 - dar um jeito de identificar o clique no elemento da tab
+tabs.forEach((tab) => {
+  tab.addEventListener("click", function () {
 
-    if(aba.classList.contains("selecionado")){
+    if(tab.classList.contains("selected")){
         return;
     }
 
-    selecionarAba(aba);
-    mostrarConteudoDaAba(aba);
+    selecionartab(tab);
+    mostrarConteudoDatab(tab);
   });
 });
 
-function selecionarAba(aba) {
-  //- passo 3 - quando o usuário clicar, desmarcar a aba selecionada
-  const abaSelecionada = document.querySelector(".aba.selecionado");
-  abaSelecionada.classList.remove("selecionado");
-  // - passo 4 - marcar a aba clicada como selecionado
-  aba.classList.add("selecionado");
+function selecionartab(tab) {
+  //- passo 3 - quando o usuário clicar, desmarcar a tab selecionada
+  const tabselecionada = document.querySelector(".tab.selected");
+  tabselecionada.classList.remove("selected");
+  // - passo 4 - marcar a tab clicada como selected
+  tab.classList.add("selected");
 }
 
 //- passo 5 - esconder o conteúdo anterior
-function mostrarConteudoDaAba(aba) {
+function mostrarConteudoDatab(tab) {
   const informacaoSelecionada = document.querySelector(
-    ".information.selecionado"
+    ".information.selected"
   );
-  informacaoSelecionada.classList.remove("selecionado");
-  //- passo 6 - mostrar o conteúdo da aba selecionada
-  const idDaInformacaoDaAba = `information-${aba.id}`;
-  console.log(idDaInformacaoDaAba);
+  informacaoSelecionada.classList.remove("selected");
+  //- passo 6 - mostrar o conteúdo da tab selecionada
+  const idDaInformacaoDatab = `information-${tab.id}`;
+  console.log(idDaInformacaoDatab);
 
-  const informacaoASerMostrada = document.getElementById(idDaInformacaoDaAba)
-  informacaoASerMostrada.classList.add("selecionado");
+  const informacaoASerMostrada = document.getElementById(idDaInformacaoDatab)
+  informacaoASerMostrada.classList.add("selected");
 }
+

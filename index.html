@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/rolagem.css">
+    <link rel="stylesheet" href="src/css/scrolling.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Mini portfólio</title>
 </head>
@@ -24,29 +26,44 @@
 
         <div class="card-information">
 
-            <ul class="abas">
+            <ul class="tabs">
 
-                <li class="aba selecionado" id="sobre-mim">
+                <li class="tab selected" id="sobre-mim">
                     <img src="src/images/sobre.gif" alt="">
                 </li>
 
-                <li class="aba" id="minhas-redes">
-                    <i class="fas fa-heart"></i>
+                <li class="tab" id="minhas-redes">
+                    <!-- <i class="fas fa-heart"></i> -->
+                    <img src="src/images/coracao.gif" alt="">
                 </li>
 
             </ul>
 
-            <div class="abas-information">
-                <div class="information selecionado" id="information-sobre-mim">
+            <div class="tabs-information">
+                <div class="information selected" id="information-sobre-mim">
                     <h3 class="sub-title">Sobre</h3>
 
                     <div class="description">
-                        <p >Olá meu nome é Pedro Henrique, seja bem vindo ao meu mini portifólio.</p>
+                        <p>Olá, meu nome é Pedro Henrique seja bem vindo ao meu mini portifólio.</p>
                         <br>
-                        <p >Sou uma pessoa tranquila, que gosta de ficar em casa, sou determinado e não desisto até conseguir meus objetivos, amo aprender coisas novas e depois de começar a me dedicar para primeira vaga estudar virou um passatempo, nas demais horas costumos ver séries ou animes e de vez enquando costumo sair.Sou uma pessoa tranquila, que gosta de ficar em casa, sou determinado e não desisto até conseguir meus objetivos, amo aprender coisas novas e depois de começar a me dedicar para primeira vaga estudar virou um passatempo, nas demais horas costumos ver séries ou animes e de vez enquando costumo sair.
+                        <p>Tenho 23 anos de idade, nasci em Santos SP e sou formado em Análise e Desenvolvedor de Sistemas agora vou deixar as coisas mais técnicas de lado e falar mais sobre mim. Desde de sempre fui fascinado por tecnologia, amava video games, TV, celular, qualquer coisa tecnológica eu queria ter contato, mas pra ser sincero nunca achei que seria minha área de atuação.
+                            <br>
+                            <br>
+                            Quando criança na escola minha matéria favorita era Ciências e eu amava bebês então na minha cabeça eu sempre tive a imagem que seria médico pediatra, mas não me leve muito a sério já que até vendedor de tapioca eu quis ser quando mais novo. Depois que sai do ensino médio foi difícil pra mim decidir qual área seguir pois ainda tinha a vontade de ser médico, então fiz vestibular mas como todos sabemos passar em medicina é desafiador, não consegui então tive que escolher outro caminho e hoje vejo que foi a melhor decisão que tomei, não me vejo em outra área eu me divirto fazendo o que eu faço e aprender coisas novas é de longe a melhor coisa pra mim então me sinto abençoado por ter feito a escolha certa.
+                            <br>
+                            <br>
+                            Após uns anos na faculdade percebi o quanto a área de TI é extensa e me deparei com
+                            outra dúvida qual área seguir, pesquisei bastante antes de tomar essa decisão e percebi que
+                            o desenvolvimento Web era a que mais se encaixava, pois sempre tive gosto pela parte do
+                            Design também, por isso me especializei em programação Front End, conhecendo o <span>HTML,
+                                CSS e JavaScript</span> mas depois de ter aprendido tantos tenho certeza que não vou
+                            parar por aqui, vou me tornar um programador Full Stack, e é só o começo.
+                            <br>
+                            <br>
+                            Clique no <span class="alert">coração</span> ao lado para ver minhas habilidades -->
                         </p>
                     </div>
-                
+
                 </div>
 
                 <div class="information" id="information-minhas-redes">
@@ -55,11 +72,14 @@
 
                     <ul class="redes-sociais">
                         <li>
-                            <a class="curriculo" href="https://www.canva.com/design/DAE_YvcuvE4/seGXUksx5Ts1m4AnMcuaLQ/view?utm_content=DAE_YvcuvE4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Currículo</a>
+                            <a class="curriculo"
+                                href="https://drive.google.com/file/d/1HNypG3bGHxIyKiQ_fXBnYK6mImlT8BZd/view?usp=sharing"
+                                target="_blank">Currículo</a>
                         </li>
 
                         <li>
-                            <a class="linkedin" href="https://www.linkedin.com/in/pedro-andrade-aa7aa1218/" target="_blank">LinkedIn</a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/pedro-andrade-aa7aa1218/"
+                                target="_blank">LinkedIn</a>
                         </li>
 
                         <li>
@@ -71,9 +91,12 @@
             </div>
         </div>
     </main>
-    
+
     <script src="./src/js/index.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>
